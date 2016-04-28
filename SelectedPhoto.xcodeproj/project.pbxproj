@@ -13,6 +13,8 @@
 		38A994301CD2454F00924400 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A9942E1CD2454F00924400 /* Main.storyboard */; };
 		38A994321CD2454F00924400 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 38A994311CD2454F00924400 /* Assets.xcassets */; };
 		38A994351CD2454F00924400 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 38A994331CD2454F00924400 /* LaunchScreen.storyboard */; };
+		38A994411CD2464F00924400 /* SLPhotos.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A9943E1CD2464F00924400 /* SLPhotos.m */; };
+		38A994451CD246F200924400 /* UIActionSheet+SL.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A994441CD246F200924400 /* UIActionSheet+SL.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		38A994311CD2454F00924400 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38A994341CD2454F00924400 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38A994361CD2454F00924400 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38A9943D1CD2464F00924400 /* SLPhotos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPhotos.h; sourceTree = "<group>"; };
+		38A9943E1CD2464F00924400 /* SLPhotos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPhotos.m; sourceTree = "<group>"; };
+		38A994431CD246F200924400 /* UIActionSheet+SL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+SL.h"; sourceTree = "<group>"; };
+		38A994441CD246F200924400 /* UIActionSheet+SL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+SL.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		38A994241CD2454F00924400 /* SelectedPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				38A9943C1CD2464F00924400 /* Terry */,
 				38A994281CD2454F00924400 /* AppDelegate.h */,
 				38A994291CD2454F00924400 /* AppDelegate.m */,
 				38A9942B1CD2454F00924400 /* ViewController.h */,
@@ -77,6 +84,17 @@
 				38A994261CD2454F00924400 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		38A9943C1CD2464F00924400 /* Terry */ = {
+			isa = PBXGroup;
+			children = (
+				38A9943D1CD2464F00924400 /* SLPhotos.h */,
+				38A9943E1CD2464F00924400 /* SLPhotos.m */,
+				38A994431CD246F200924400 /* UIActionSheet+SL.h */,
+				38A994441CD246F200924400 /* UIActionSheet+SL.m */,
+			);
+			path = Terry;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A9942D1CD2454F00924400 /* ViewController.m in Sources */,
+				38A994411CD2464F00924400 /* SLPhotos.m in Sources */,
+				38A994451CD246F200924400 /* UIActionSheet+SL.m in Sources */,
 				38A9942A1CD2454F00924400 /* AppDelegate.m in Sources */,
 				38A994271CD2454F00924400 /* main.m in Sources */,
 			);
@@ -264,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelectedPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyq.demo.SelectedPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +296,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SelectedPhoto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyq.demo.SelectedPhoto;
 				PRODUCT_NAME = "$(TARGET_NAME)";

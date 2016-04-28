@@ -7,16 +7,55 @@
 //
 
 #import "ViewController.h"
+#import "SLPhotos.h"
 
 @interface ViewController ()
+<SLPhotosDelegate>
+
+@property (nonatomic, copy) UIImageView *img;   //!< 图片
 
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
+    
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self.view addSubview:self.img];
+    
+    self.navigationItem.title = @"点击调用";
+    
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+}
+
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    
+    SLPhotos *photo = [[SLPhotos alloc] init];
+    photo.delegate = self;
+    photo.navVC = (UINavigationController *)self;
+    photo.allowsEditing = YES;
+}
+
+- (UIImageView *)img {
+    
+    if (!_img) {
+        
+        UIImageView *img = [[UIImageView alloc] initWithFrame:CGRectMake(50, 150, 100, 100)];
+        img.backgroundColor = [UIColor orangeColor];
+        img.contentMode = UIViewContentModeScaleAspectFit;
+        _img = img;
+    }
+    return _img;
+}
+
+
+- (void)photosWithImgData:(NSData *)imgData {
+    
+    self.img.image = [UIImage imageWithData:imgData];
 }
 
 - (void)didReceiveMemoryWarning {
