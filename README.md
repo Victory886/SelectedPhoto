@@ -4,15 +4,21 @@
 
 
 @property (nonatomic, weak) id<SLPhotosDelegate>delegate;       //!< 代理方法
+
 @property (nonatomic, strong) UINavigationController *navVC;    //!< 导航控制器
+
 @property (nonatomic, assign) BOOL allowsEditing;               //!< 图片是否可以编辑
+
 @property (nonatomic, assign) int alterBtnCount;                //!< alter按钮的个数
 
 
 使用非常方便
     SLPhotos *photo = [[SLPhotos alloc] init];
+    
     photo.delegate = self;
+    
     photo.navVC = (UINavigationController *)self;
+    
     photo.allowsEditing = YES;
     
     
