@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3807F5F81CED98B2002E22B4 /* SelectedPhotoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3807F5F71CED98B2002E22B4 /* SelectedPhotoUITests.m */; };
+		38373FB81D1296460047C653 /* SLBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 38373FB71D1296460047C653 /* SLBluetooth.m */; };
+		386459591CE0829B003BE305 /* HealthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 386459571CE0829B003BE305 /* HealthViewController.m */; };
+		3864595A1CE0829B003BE305 /* HealthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 386459581CE0829B003BE305 /* HealthViewController.xib */; };
 		38A994271CD2454F00924400 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A994261CD2454F00924400 /* main.m */; };
 		38A9942A1CD2454F00924400 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A994291CD2454F00924400 /* AppDelegate.m */; };
 		38A9942D1CD2454F00924400 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A9942C1CD2454F00924400 /* ViewController.m */; };
@@ -17,7 +21,26 @@
 		38A994451CD246F200924400 /* UIActionSheet+SL.m in Sources */ = {isa = PBXBuildFile; fileRef = 38A994441CD246F200924400 /* UIActionSheet+SL.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3807F5FA1CED98B2002E22B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 38A9941A1CD2454F00924400 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 38A994211CD2454F00924400;
+			remoteInfo = SelectedPhoto;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3807F5F51CED98B2002E22B4 /* SelectedPhotoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SelectedPhotoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3807F5F71CED98B2002E22B4 /* SelectedPhotoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedPhotoUITests.m; sourceTree = "<group>"; };
+		3807F5F91CED98B2002E22B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		38373FB61D1296460047C653 /* SLBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBluetooth.h; sourceTree = "<group>"; };
+		38373FB71D1296460047C653 /* SLBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBluetooth.m; sourceTree = "<group>"; };
+		386459531CE08267003BE305 /* SelectedPhoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = SelectedPhoto.entitlements; sourceTree = "<group>"; };
+		386459561CE0829B003BE305 /* HealthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HealthViewController.h; sourceTree = "<group>"; };
+		386459571CE0829B003BE305 /* HealthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HealthViewController.m; sourceTree = "<group>"; };
+		386459581CE0829B003BE305 /* HealthViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HealthViewController.xib; sourceTree = "<group>"; };
 		38A994221CD2454F00924400 /* SelectedPhoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SelectedPhoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		38A994261CD2454F00924400 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		38A994281CD2454F00924400 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -35,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		3807F5F21CED98B2002E22B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38A9941F1CD2454F00924400 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +75,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3807F5F61CED98B2002E22B4 /* SelectedPhotoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3807F5F71CED98B2002E22B4 /* SelectedPhotoUITests.m */,
+				3807F5F91CED98B2002E22B4 /* Info.plist */,
+			);
+			path = SelectedPhotoUITests;
+			sourceTree = "<group>";
+		};
 		38A994191CD2454F00924400 = {
 			isa = PBXGroup;
 			children = (
 				38A994241CD2454F00924400 /* SelectedPhoto */,
+				3807F5F61CED98B2002E22B4 /* SelectedPhotoUITests */,
 				38A994231CD2454F00924400 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				38A994221CD2454F00924400 /* SelectedPhoto.app */,
+				3807F5F51CED98B2002E22B4 /* SelectedPhotoUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,11 +105,17 @@
 		38A994241CD2454F00924400 /* SelectedPhoto */ = {
 			isa = PBXGroup;
 			children = (
+				386459531CE08267003BE305 /* SelectedPhoto.entitlements */,
 				38A9943C1CD2464F00924400 /* Terry */,
 				38A994281CD2454F00924400 /* AppDelegate.h */,
 				38A994291CD2454F00924400 /* AppDelegate.m */,
 				38A9942B1CD2454F00924400 /* ViewController.h */,
 				38A9942C1CD2454F00924400 /* ViewController.m */,
+				38373FB61D1296460047C653 /* SLBluetooth.h */,
+				38373FB71D1296460047C653 /* SLBluetooth.m */,
+				386459561CE0829B003BE305 /* HealthViewController.h */,
+				386459571CE0829B003BE305 /* HealthViewController.m */,
+				386459581CE0829B003BE305 /* HealthViewController.xib */,
 				38A9942E1CD2454F00924400 /* Main.storyboard */,
 				38A994311CD2454F00924400 /* Assets.xcassets */,
 				38A994331CD2454F00924400 /* LaunchScreen.storyboard */,
@@ -100,6 +147,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3807F5F41CED98B2002E22B4 /* SelectedPhotoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3807F5FE1CED98B3002E22B4 /* Build configuration list for PBXNativeTarget "SelectedPhotoUITests" */;
+			buildPhases = (
+				3807F5F11CED98B2002E22B4 /* Sources */,
+				3807F5F21CED98B2002E22B4 /* Frameworks */,
+				3807F5F31CED98B2002E22B4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3807F5FB1CED98B2002E22B4 /* PBXTargetDependency */,
+			);
+			name = SelectedPhotoUITests;
+			productName = SelectedPhotoUITests;
+			productReference = 3807F5F51CED98B2002E22B4 /* SelectedPhotoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		38A994211CD2454F00924400 /* SelectedPhoto */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 38A994391CD2454F00924400 /* Build configuration list for PBXNativeTarget "SelectedPhoto" */;
@@ -126,8 +191,18 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "胜利_Terry";
 				TargetAttributes = {
+					3807F5F41CED98B2002E22B4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 38A994211CD2454F00924400;
+					};
 					38A994211CD2454F00924400 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 322855S9WE;
+						SystemCapabilities = {
+							com.apple.HealthKit = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -145,17 +220,26 @@
 			projectRoot = "";
 			targets = (
 				38A994211CD2454F00924400 /* SelectedPhoto */,
+				3807F5F41CED98B2002E22B4 /* SelectedPhotoUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3807F5F31CED98B2002E22B4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38A994201CD2454F00924400 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				38A994351CD2454F00924400 /* LaunchScreen.storyboard in Resources */,
 				38A994321CD2454F00924400 /* Assets.xcassets in Resources */,
+				3864595A1CE0829B003BE305 /* HealthViewController.xib in Resources */,
 				38A994301CD2454F00924400 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,12 +247,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3807F5F11CED98B2002E22B4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3807F5F81CED98B2002E22B4 /* SelectedPhotoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		38A9941E1CD2454F00924400 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				38A9942D1CD2454F00924400 /* ViewController.m in Sources */,
+				38373FB81D1296460047C653 /* SLBluetooth.m in Sources */,
 				38A994411CD2464F00924400 /* SLPhotos.m in Sources */,
+				386459591CE0829B003BE305 /* HealthViewController.m in Sources */,
 				38A994451CD246F200924400 /* UIActionSheet+SL.m in Sources */,
 				38A9942A1CD2454F00924400 /* AppDelegate.m in Sources */,
 				38A994271CD2454F00924400 /* main.m in Sources */,
@@ -176,6 +270,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3807F5FB1CED98B2002E22B4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 38A994211CD2454F00924400 /* SelectedPhoto */;
+			targetProxy = 3807F5FA1CED98B2002E22B4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		38A9942E1CD2454F00924400 /* Main.storyboard */ = {
@@ -197,6 +299,28 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		3807F5FC1CED98B3002E22B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SelectedPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyq.demo.SelectedPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SelectedPhoto;
+			};
+			name = Debug;
+		};
+		3807F5FD1CED98B3002E22B4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = SelectedPhotoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyq.demo.SelectedPhotoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = SelectedPhoto;
+			};
+			name = Release;
+		};
 		38A994371CD2454F00924400 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -283,11 +407,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: BaoShengLi 宝 (TXT8U8JWAD)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: BaoShengLi 宝 (TXT8U8JWAD)";
 				INFOPLIST_FILE = SelectedPhoto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hyq.demo.SelectedPhoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terry.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c81bbe00-b7f8-4dfe-bddd-0bba687f2e12";
 			};
 			name = Debug;
 		};
@@ -295,17 +422,29 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = SelectedPhoto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.hyq.demo.SelectedPhoto;
+				PRODUCT_BUNDLE_IDENTIFIER = com.terry.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3807F5FE1CED98B3002E22B4 /* Build configuration list for PBXNativeTarget "SelectedPhotoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3807F5FC1CED98B3002E22B4 /* Debug */,
+				3807F5FD1CED98B3002E22B4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		38A9941D1CD2454F00924400 /* Build configuration list for PBXProject "SelectedPhoto" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -322,6 +461,7 @@
 				38A9943B1CD2454F00924400 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
